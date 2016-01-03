@@ -63,10 +63,18 @@ def explore(life)
 	end 
 	puts "You turn around to see a small door next to you"
 	puts "You reach out and try turning the door handle but it is locked"
-	puts "Will you try opening the door?"
-	choice = gets.chomp 
-	if 
-		
+	puts "Will you try opening the door? (yes/no)"
+	choice = gets.chomp.downcase
+	if choice == 'yes' && item[0] == 'key'
+		puts "You unlocked the door"
+	elsif choice == 'yes' && item[0] != 'key'
+		puts "You need to have the key!"
+	elsif choice == 'no'
+		puts "Well you get bored and decide to head back to the bed." 
+		puts "a knife falls from the ceiling and you die"
+		life -= 10 
+		puts "Your life is #{life}"		
+	end 		
 end 
 
 main 
