@@ -20,8 +20,8 @@ def main_menu
 	if choice == 1
 		start(life)
 	elsif choice == 2
-		puts "I see...your afraid!"
-		`say "I see...your afraid!"`
+		puts "I see...you are afraid!"
+		`say "I see...you are afraid!"`
 	end 
 end 
 
