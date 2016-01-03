@@ -49,6 +49,7 @@ def stay(life)
 	puts "Your life is #{life}"
 end 
 
+#This method creates the item array which will be used to hold items as ones journey progresses
 def explore(life)
 	puts `clear`
 	puts "you get up off of the bed and start to look around the room"
