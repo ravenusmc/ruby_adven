@@ -1,5 +1,6 @@
 def main 
 	puts "Welcome to Mikes quest"
+	`say "Welcome to Mikes quest"`
 	puts "----------------------"
 	puts ">---< >----<"
 
@@ -9,6 +10,7 @@ end
 def main_menu
 	puts `clear`
 	puts "What is your choice?"
+	`say "What is your choice?"`
 	puts "1. To Play Mikes Quest!"
 	puts "2. To Exit Mikes Quest!"
 	choice = gets.chomp.to_i
@@ -19,6 +21,7 @@ def main_menu
 		start(life)
 	elsif choice == 2
 		puts "I see...your afraid!"
+		`say "I see...your afraid!"`
 	end 
 end 
 
@@ -42,6 +45,7 @@ def stay(life)
 	puts "You stare at the ceiling when suddenly a knife drops from it!"
 	life -= 10 
 	puts "It cuts through your stomach and your die!"
+	`say "The knife cuts through your stomach and you are dead!"`
 	puts "Your life is #{life}"
 end 
 
