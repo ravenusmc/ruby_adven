@@ -43,7 +43,13 @@ def stay(life)
 	life -= 10 
 	puts "It cuts through your stomach and your die!"
 	puts "Your life is #{life}"
-	main 
+end 
+
+def explore(life)
+	puts `clear`
+	puts "you get up off of the bed and start to look around the room"
+	puts "It is an empy room with a shelf across from you."
+	puts "You walk "
 end 
 
 main 
