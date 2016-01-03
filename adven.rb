@@ -78,12 +78,19 @@ def explore(life)
 	end 		
 end 
 
-def hallway(life,item)
+def hallway(life, item)
 	puts `clear`
 	puts "upon exiting the room you find yourself in a small hallway."
 	puts "There is a door to your left, a door to your right and a door a head of you"
 	puts "which direction will you go? (left, right, straight)"
 	choice = gets.chomp.downcase
+	if choice == 'left'
+		puts "You open the door and as soon as you step into the room a gun goes off"
+		puts "The bullet hits you in your head and you die"
+		puts "You should have known that left was bad, for it comes from Sinister in Latin"
+		life -= 10
+		puts "Your life is #{life} since you are dead!"
+	end 
 end 
 
 main 
