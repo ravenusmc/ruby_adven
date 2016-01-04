@@ -118,4 +118,15 @@ def hallway2(life, item)
 	end 
 end 
 
+def prison(life, item)
+	puts `clear`
+	puts "You enter a room that only has a single swinging lamp from the ceiling"
+	puts "On the far side of the room you see that there are two skeletons chained to the wall"
+	puts "You approach them. On the one on the right you can see that it has a note on it"
+	puts "you pick up the note and start reading it"
+	`say "Dear Tom I have been stuck in this house for years and I have never been able to find a way out"`
+	puts "Dear Tom I have been stuck in this house for years and I have never been able to find a way out"
+	`say "I was finally captured by a force that I could not see. That being gave me a pen and paper to write to you"`
+	puts "I was finally captured by a force that I could not see. That being gave me a pen and paper to write to you"
+end 
 main 
