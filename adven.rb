@@ -52,7 +52,7 @@ end
 #This method creates the item array which will be used to hold items as ones journey progresses
 def explore(life)
 	puts `clear`
-	puts "you get up off of the bed and start to look around the room"
+	puts "You get up off of the bed and start to look around the room"
 	puts "It is an empy room with a shelf across from you."
 	puts "You walk to the shelf which is very dusty"
 	puts "on the shelf you notice that there is a key"
@@ -85,7 +85,7 @@ end
 
 def hallway(life, item)
 	puts `clear`
-	puts "upon exiting the room you find yourself in a small hallway."
+	puts "Upon exiting the room you find yourself in a small hallway."
 	puts "There is a door to your left, a door to your right and a door a head of you"
 	puts "which direction will you go? (left, right, straight)"
 	choice = gets.chomp.downcase
@@ -95,6 +95,26 @@ def hallway(life, item)
 		puts "You should have known that left was bad, for it comes from Sinister in Latin"
 		life -= 10
 		puts "Your life is #{life} since you are dead!"
+	elsif choice == 'right'
+		hallway2(life, item)
+	end 
+end 
+
+def hallway2(life, item)
+	puts `clear` 
+	puts "You enter a long hallway that has a red rug."
+	puts "you decide to start walking down it."
+	puts "on the right hand side you see that there are windows and that it is night out"
+	puts "rain is beating down on the window, lightening flashes in the distance"
+	puts "and yet you continue on walking down the hallways until you come to a door"
+	puts "will you open the door? (yes/no)"
+	choice = gets.chomp.downcase 
+	if choice == "yes"
+		puts "You turn the handle, the door opens, you enter another room"
+		prison(life,item)
+	elsif choice == "no"
+		puts "You turn around and decide to head back to the original small hallway"
+		hallway(life,item) 
 	end 
 end 
 
