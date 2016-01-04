@@ -123,10 +123,21 @@ def prison(life, item)
 	puts "You enter a room that only has a single swinging lamp from the ceiling"
 	puts "On the far side of the room you see that there are two skeletons chained to the wall"
 	puts "You approach them. On the one on the right you can see that it has a note on it"
-	puts "you pick up the note and start reading it"
-	`say "Dear Tom I have been stuck in this house for years and I have never been able to find a way out"`
-	puts "Dear Tom I have been stuck in this house for years and I have never been able to find a way out"
-	`say "I was finally captured by a force that I could not see. That being gave me a pen and paper to write to you"`
-	puts "I was finally captured by a force that I could not see. That being gave me a pen and paper to write to you"
+	puts "Will you pick up the note? (yes/no)"
+	choice = gets.chomp.downcase
+	if choice == "yes"
+		puts "you pick up the note and start reading it"
+		`say "Dear Tom I have been stuck in this house for years and I have never been able to find a way out"`
+		puts "Dear Tom I have been stuck in this house for years and I have never been able to find a way out"
+		`say "I was finally captured by a force that I could not see. That being gave me a pen and paper to write to you"`
+		puts "I was finally captured by a force that I could not see. That being gave me a pen and paper to write to you"
+		`say "oh Tom I am not sure what to write you. I am stuck here forever...I lo...love you!"`
+		puts "oh Tom I am not sure what to write you. I am stuck here forever...I lo...love you!"
+		`say "Your loving wife Clare"`
+		puts "Your loving wife Clare"
+	elsif choice == "no"
+		puts "You ignore the letter!"
+	end 
 end 
+
 main 
