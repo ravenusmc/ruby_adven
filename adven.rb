@@ -138,6 +138,14 @@ def prison(life, item)
 	elsif choice == "no"
 		puts "You ignore the letter!"
 	end 
+	puts "You look over at the 2nd skeleton and notice that there is a pistol."
+	puts "Will you take the pistol? (yes/no)"
+	choice = gets.chomp.downcase
+	if choice == "yes"
+		puts "you picked up the pistol and added it to your inventory"
+		item.push(pistol)
+		puts item 
+	end 
 end 
 
 main 
