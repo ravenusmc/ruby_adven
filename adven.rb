@@ -97,6 +97,8 @@ def hallway(life, item)
 		puts "Your life is #{life} since you are dead!"
 	elsif choice == 'right'
 		hallway2(life, item)
+	elsif choice == 'straight'
+		large_room(life,item)
 	end 
 end 
 
@@ -144,13 +146,17 @@ def prison(life, item)
 	if choice == "yes"
 		puts "you picked up the pistol and added it to your inventory"
 		item.push('pistol')
-		puts item 
 	elsif choice == "no"
 		puts "You leave the pistol"
 		puts "You have a feeling that was not a smart choice"
 	end 
-		
-	end 
+	 puts "looking around the room you see that there is nothing left in this room"
+	 puts "you take one final look at the skeletons and hope that you do not end up like them!"
+	 puts "you move back through the hallway to the smaller hallway."
+	 hallway(life,item)
 end 
+
+def large_room(life, item)
+end
 
 main 
