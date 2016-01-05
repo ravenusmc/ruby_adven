@@ -143,8 +143,13 @@ def prison(life, item)
 	choice = gets.chomp.downcase
 	if choice == "yes"
 		puts "you picked up the pistol and added it to your inventory"
-		item.push(pistol)
+		item.push('pistol')
 		puts item 
+	elsif choice == "no"
+		puts "You leave the pistol"
+		puts "You have a feeling that was not a smart choice"
+	end 
+		
 	end 
 end 
 
