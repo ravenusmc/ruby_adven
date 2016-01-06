@@ -158,6 +158,7 @@ end
 
 def large_room(life, item)
 	puts `clear`
+	puts item 
 	puts "As you open the door you see a giant shadow like being standing in front of you with Red glowning eyes"
 	puts "What action will you take? (run/shoot)"
 	choice = gets.chomp.downcase
@@ -167,23 +168,29 @@ def large_room(life, item)
 		puts "Sorry you did not survive!"
 		puts "GAME OVER MAN" 
 		`say "GAME OVER MAN"`
-	elsif choice == "shoot" && item[1] != "gun"
+	elsif choice == "shoot" && item[1] != "pistol"
 		puts "You have no gun!"
 		puts "The being grabs your head and rips it clean off your body"
 		puts "Sorry you did not survive!"
 		puts "GAME OVER MAN" 
 		`say "GAME OVER MAN"`
-	elsif choice == "shoot" && item[1] == "gun"
+	elsif choice == "shoot" && item[1] == "pistol"
 		puts "You pull out the gun and shoot the monster backwards!!!"
-		puts "will you fire another round? (yes/no)"
-		bullet = 10 
-		bullet -= 1 
-		answer = gets.chomp.downcase
-		if answer == "yes"
-			puts "You fire one more round into the monster"
-			puts "OMG it just disappears!"
-			puts "You wonder what the hell just happened!" 
-		
+			puts "will you fire another round? (yes/no)"
+			bullet = 10 
+			bullet -= 1 
+			answer = gets.chomp.downcase
+			if answer == "yes"
+				puts "You fire one more round into the monster"
+				puts "OMG it just disappears!"
+				puts "You wonder what the hell just happened!" 
+				puts "Now that the monster is gone you can walk into the large room"
+			elsif answer == "no"
+				puts "The monster leaps forward and grabs both of your arms!"
+				puts "The monster rips both of your arms clean off of your body!"
+				puts "GAME OVER MAN" 
+				`say "GAME OVER MAN"`
+			end 
 	end 
 end
 
