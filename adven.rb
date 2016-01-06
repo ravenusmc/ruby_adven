@@ -157,7 +157,16 @@ def prison(life, item)
 end 
 
 def large_room(life, item)
-	puts "As you open the door "
+	puts "As you open the door you see a giant shadow like being standing in front of you with Red glowning eyes"
+	puts "What action will you take? (run/shoot)"
+	choice = gets.chomp.downcase
+	if choice == "run"
+		puts "You turn to run but the being rips the door off of its henges"
+		puts "It grabs your head and rips it clean off your body"
+		puts "Sorry you did not survive!"
+		puts "GAME OVER MAN" 
+		`say "GAME OVER MAN"`
+	end 
 end
 
 main 
