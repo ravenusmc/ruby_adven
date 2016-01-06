@@ -176,8 +176,13 @@ def large_room(life, item)
 	elsif choice == "shoot" && item[1] == "gun"
 		puts "You pull out the gun and shoot the monster backwards!!!"
 		puts "will you fire another round? (yes/no)"
+		bullet = 10 
+		bullet -= 1 
 		answer = gets.chomp.downcase
-		if answer ==  
+		if answer == "yes"
+			puts "You fire one more round into the monster"
+			puts "OMG it just disappears!"
+			puts "You wonder what the hell just happened!" 
 		
 	end 
 end
