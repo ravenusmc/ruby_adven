@@ -157,6 +157,7 @@ def prison(life, item)
 end 
 
 def large_room(life, item)
+	puts `clear`
 	puts "As you open the door you see a giant shadow like being standing in front of you with Red glowning eyes"
 	puts "What action will you take? (run/shoot)"
 	choice = gets.chomp.downcase
@@ -166,6 +167,18 @@ def large_room(life, item)
 		puts "Sorry you did not survive!"
 		puts "GAME OVER MAN" 
 		`say "GAME OVER MAN"`
+	elsif choice == "shoot" && item[1] != "gun"
+		puts "You have no gun!"
+		puts "The being grabs your head and rips it clean off your body"
+		puts "Sorry you did not survive!"
+		puts "GAME OVER MAN" 
+		`say "GAME OVER MAN"`
+	elsif choice == "shoot" && item[1] == "gun"
+		puts "You pull out the gun and shoot the monster backwards!!!"
+		puts "will you fire another round? (yes/no)"
+		answer = gets.chomp.downcase
+		if answer ==  
+		
 	end 
 end
 
