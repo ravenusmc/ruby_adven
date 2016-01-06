@@ -157,6 +157,7 @@ def prison(life, item)
 end 
 
 def large_room(life, item)
+	puts "As you open the door "
 end
 
 main 
