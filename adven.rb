@@ -185,6 +185,8 @@ def large_room(life, item)
 				puts "OMG it just disappears!"
 				puts "You wonder what the hell just happened!" 
 				puts "Now that the monster is gone you can walk into the large room"
+				puts "The room is massive but there does not seem to be much in it"
+				puts "On the far side of "
 			elsif answer == "no"
 				puts "The monster leaps forward and grabs both of your arms!"
 				puts "The monster rips both of your arms clean off of your body!"
