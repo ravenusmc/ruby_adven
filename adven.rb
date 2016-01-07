@@ -158,7 +158,6 @@ end
 
 def large_room(life, item)
 	puts `clear`
-	puts item 
 	puts "As you open the door you see a giant shadow like being standing in front of you with Red glowning eyes"
 	puts "What action will you take? (run/shoot)"
 	choice = gets.chomp.downcase
@@ -191,7 +190,15 @@ def large_room(life, item)
 				puts "As you think about it you have no memory of ever arriving here."
 				puts "You finally reach the three doors. You look back and the walk was about the length of a football field"
 				puts "Above the doors you see a phrase it says 'Now the Real Adventure begins!'"
-				puts "Which door will you choose?"
+				puts "Which door will you choose? (left, middle, right)"
+				door = gets.chomp.downcase
+				if door == "left"
+					left(life, item, bullet)
+				elsif door == "middle"
+					middle(life,item,bullet)
+				elsif door == "right"
+					right(life,item,bullet)
+				end 
 			elsif answer == "no"
 				puts "The monster leaps forward and grabs both of your arms!"
 				puts "The monster rips both of your arms clean off of your body!"
@@ -200,5 +207,14 @@ def large_room(life, item)
 			end 
 	end 
 end
+
+def left(life, item, bullet)
+end 
+
+def middle(life, item, buttet)
+end 
+
+def right(life, item, bullet)
+end  
 
 main 
