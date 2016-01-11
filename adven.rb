@@ -210,6 +210,10 @@ end
 
 def left(life, item, bullet)
 	puts "You enter a long hallway and start to walk down it."
+	puts "The hallway opens up to a what appears to be a large cave."
+	puts "The cave does not seem to be normal though as there are gian mushrooms growing out of the ground"
+	puts "The mushrooms appear to be at least 8 to 12 feet tall!"
+	puts "You decide to start walking through the giant forest"
 end 
 
 def middle(life, item, buttet)
