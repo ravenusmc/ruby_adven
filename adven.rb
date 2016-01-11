@@ -209,6 +209,7 @@ def large_room(life, item)
 end
 
 def left(life, item, bullet)
+	puts "You enter a long hallway and start to walk down it."
 end 
 
 def middle(life, item, buttet)
