@@ -209,11 +209,19 @@ def large_room(life, item)
 end
 
 def left(life, item, bullet)
+	puts `clear`
 	puts "You enter a long hallway and start to walk down it."
 	puts "The hallway opens up to a what appears to be a large cave."
 	puts "The cave does not seem to be normal though as there are gian mushrooms growing out of the ground"
 	puts "The mushrooms appear to be at least 8 to 12 feet tall!"
 	puts "You decide to start walking through the giant forest"
+	puts "As you walk through the forest you eventually come to an individual sitting on a mushroom blowing into a flute"
+	puts "getting closer to the individual you believe that she is a female. For she has shoulder length blue hair and small reddish eyes"
+	puts "The most interesting thing about her though is her clothes. They are green but her shorts are very short and her top is most unusual"
+	puts "For the top covers over her midsection. The lower part of her stomach is exposed and the top portion of her shirt barely covers all of her breast"
+	puts "You approach her and she suddenly stops playing the flute and looks up at you"
+	puts `clear`
+	puts "'Hello' she says"
 end 
 
 def middle(life, item, buttet)
