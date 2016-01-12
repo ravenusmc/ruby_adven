@@ -223,7 +223,18 @@ def left(life, item, bullet)
 	puts `clear`
 	puts "'Hello' she says"
 	puts "She jumps off of the giant mushroom and rans over to you. She gives you a big hug and you notice that her body feels much warmer than any other body you have touched"
-	
+ 	puts "She asks you: Would you like to kiss me? (yes/no)"
+ 	kiss = gets.chomp.to_s.downcase
+ 	if kiss == "yes"
+ 		puts `clear`
+ 		puts "she leans forward and quickly kisses you on the lips."
+ 		love = 5
+ 		item.push(love)
+ 		puts "She then turns and runs away from you!"
+ 	elsif kiss == "no"
+ 		puts `clear`
+ 		puts "she hits you in the chest and then runs away"	
+ 	end 
 end 
 
 def middle(life, item, buttet)
