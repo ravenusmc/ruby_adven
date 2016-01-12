@@ -222,6 +222,8 @@ def left(life, item, bullet)
 	puts "You approach her and she suddenly stops playing the flute and looks up at you"
 	puts `clear`
 	puts "'Hello' she says"
+	puts "She jumps off of the giant mushroom and rans over to you. She gives you a big hug and you notice that her body feels much warmer than any other body you have touched"
+	
 end 
 
 def middle(life, item, buttet)
