@@ -235,6 +235,8 @@ def left(life, item, bullet)
  		puts `clear`
  		puts "she hits you in the chest and then runs away"	
  	end 
+ 	puts "You continue to walk through the land of the giant mushrooms. The air feels thick with humidity"
+ 	puts 
 end 
 
 def middle(life, item, buttet)
