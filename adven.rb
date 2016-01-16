@@ -240,6 +240,7 @@ def left(life, item, bullet)
 end 
 
 def middle(life, item, buttet)
+	puts `clear`
 	puts "You open the door and walk into a world of light only."
 	puts "You believe that you are in heaven. You have left the game"
 	puts "Maybe you won, maybe  you did not!"
