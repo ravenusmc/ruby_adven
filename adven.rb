@@ -236,14 +236,21 @@ def left(life, item, bullet)
  		puts "she hits you in the chest and then runs away"	
  	end 
  	puts "You continue to walk through the land of the giant mushrooms. The air feels thick with humidity"
- 	puts 
+ 	puts "You come to a clearing that seems to have much fewer mushrooms"
+ 	puts "There is a block that seems to simply be floating in the air. It is as if gravity is not acting on it!"
+ 	puts "You move past the block and see the strange girl in the distance. Do you go running towards her?"
+ 	run = gets.chomp.to_s
+ 	if run == "yes"
+ 		puts 'clear'
+ 		puts "You make your way to the girl"
+ 		puts "She puts her arms around you"
 end 
 
 def middle(life, item, buttet)
 	puts `clear`
 	puts "You open the door and walk into a world of light only."
 	puts "You believe that you are in heaven. You have left the game"
-	puts "Maybe you won, maybe  you did not!"
+	puts "Maybe you won, maybe you did not!"
 end 
 
 def right(life, item, bullet)
