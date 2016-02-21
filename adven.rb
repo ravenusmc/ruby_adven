@@ -244,6 +244,11 @@ def left(life, item, bullet)
  		puts `clear`
  		puts "You make your way to the girl"
  		puts "She puts her arms around you"
+ 		puts "You are no me and I am now you."
+ 		puts "Her body moves into yours and you are her-oh GOD!!!!!"
+ 		puts "I guess this is game over!"
+ 		puts "------------------------"
+ 		puts " <><>T<>H<>E<><>E<>N<>D<><><><>"
  	elsif run == "no"
  		puts `clear`
  		puts "you runaway from her when you trip and fall down. Suddenly you get eaten by a mushroom"
