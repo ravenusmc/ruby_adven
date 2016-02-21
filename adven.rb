@@ -257,7 +257,7 @@ def left(life, item, bullet)
  		
 end 
 
-def middle(life, item, buttet)
+def middle(life, item, bullet)
 	puts `clear`
 	puts "You open the door and walk into a world of light only."
 	puts "You believe that you are in heaven. You have left the game"
@@ -265,6 +265,9 @@ def middle(life, item, buttet)
 end 
 
 def right(life, item, bullet)
+	puts "you open the door and the world around you is white."
+	puts "The door behind you closes forever!"
+	puts "You wonder out in the land of the lost!"
 end  
 
 main 
