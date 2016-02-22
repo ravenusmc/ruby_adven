@@ -11,20 +11,23 @@ end
 def main_menu(balance)
   puts "--------------------------------"
   puts "What would you like to do?"
-  puts "1. deposit money"
-  puts "2. withdraw money"
-  puts "3. checkbalance"
+  puts "1. Deposit money"
+  puts "2. Withdraw money"
+  puts "3. Check balance"
 
   choice = gets.chomp.to_i
   if choice == 1
-    deposit
+    deposit(balance)
+  elsif choice == 2
+    withdraw(balance)
+  elsif choice == 3
+    balance(balance)
   end 
 end 
 
-def deposit
+def deposit(balance)
   puts `clear`
   puts "How much would you like to deposit?"
-  balance = 0 
   add_money = gets.chomp.to_i 
   balance = balance + add_money  
   puts "Would you like to deposit more money?(y/n)"
@@ -50,4 +53,57 @@ def deposit
   end 
 end 
 
+def withdraw(balance)
+  puts `clear`
+  puts "How much money would you like to withdraw?"
+  sub_amount = gets.chomp.to_i
+  balance = balance - sub_amount
+  if balance == 0 
+    puts "You cannot take out money since you have none!"
+  end
+
+  puts "What would you like to do:"
+  puts "1. Return to main menu"
+  puts "2. Withdraw Money"
+  puts "3. Check Balance"
+
+  choice2 = gets.chomp.to_i
+  if choice2 == 1
+    main_menu(balance)
+  elsif choice2 == 2
+    withdraw(balance)
+  elsif choice2 == 3
+    balance(balance)
+  end 
+end 
+
+def balance(balance)
+  puts `clear`
+  puts "Your balance is the following"
+
 main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
