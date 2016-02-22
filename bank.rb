@@ -96,15 +96,24 @@ def check_balance(balance, month, rate)
 end 
 
 def invest(balance, month, rate)
-  puts "Do you want to invest your money at a 0.1% rate?(y/n)"
+  puts "Do you want to invest your money at a 1.0% rate?(y/n)"
+  interest = 1.0 
   choice = gets.chomp.to_s
 
   if choice == 'y'
     puts "Here you go to make money!"
-    while choice == 'y'
-      month = month + 1 
-      
+    while choice != 'n'
+      #month = month + 1
+      #month_rate = interest / 12
+      balance = (interest * balance) + balance
+      puts "Do you want to continue to make money?"
+      choice2 = gets.chomp.to_s
+      puts balance
+    end 
+  elsif choice == 'n'
+    puts "What you don't want to make money!"
   end 
+end 
 
 main
 
