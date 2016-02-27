@@ -30,4 +30,9 @@ def open(account, games)
   end
 end 
 
+def game(account, games)
+
+  puts "Please enter the name of the game you would like to place into the database"
+  
+
 main 
