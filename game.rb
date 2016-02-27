@@ -33,6 +33,13 @@ end
 def game(account, games)
 
   puts "Please enter the name of the game you would like to place into the database"
+  game = gets.chomp.to_s
+  games.push(game)
   
+  games.each do |game|
+    puts "Here is each game: " + game 
+  end 
+
+end 
 
 main 
