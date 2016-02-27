@@ -7,20 +7,27 @@ def main
 
   account = []
 
+  games = []
+
   choice = gets.chomp.to_i
   if choice == 1
-    open
+    open(account, games)
   end 
 end 
 
-def open(account)
+def open(account, games)
   puts "You have opened an account."
   puts "What would you like to name the account?"
 
   name = gets.chomp.to_s
   account.push(name)
-  puts account 
 
+  puts "Would you like to put a game into the database?"
+  choice = gets.chomp.to_s
+
+  if choice == 'y'
+    game(account, games)
+  end
 end 
 
 main 
