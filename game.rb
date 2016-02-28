@@ -53,6 +53,17 @@ def game(account, games)
 end 
 
 def bottles 
+  puts "Would you like to run the 99 bottles of beer on the wall program?"
+  choice = gets.chomp.to_s
+  if choice == 'y'
+    count = 99
+    while count != 95 
+      puts  count.to_s + " bottles of beer on the wall"
+      count = count - 1
+      puts "Take one down pass it around"  
+      puts count.to_s + " bottles of beer on the wall!" 
+    end 
+  end 
 
 end 
 
