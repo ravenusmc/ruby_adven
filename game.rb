@@ -53,6 +53,7 @@ def game(account, games)
 end 
 
 def bottles 
+  puts "Yeah I know, this does not have much to do with this program but a personal challenge for me!"
   puts "Would you like to run the 99 bottles of beer on the wall program?"
   choice = gets.chomp.to_s
   if choice == 'y'
