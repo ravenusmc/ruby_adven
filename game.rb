@@ -4,6 +4,7 @@ def main
   puts "What would you like to do?"
   puts "1. Open an account"
   puts "2. Exit the program"
+  puts "3. 99 bottles of beer on the wall"
 
   account = []
 
@@ -12,6 +13,8 @@ def main
   choice = gets.chomp.to_i
   if choice == 1
     open(account, games)
+  elsif choice == 3
+    bottles
   end 
 end 
 
@@ -27,6 +30,8 @@ def open(account, games)
 
   if choice == 'y'
     game(account, games)
+  else choice == 'n'
+    main 
   end
 end 
 
@@ -45,6 +50,9 @@ def game(account, games)
   games.each do |game|
     puts "Here is each game: " + game 
   end 
+end 
+
+def bottles 
 
 end 
 
