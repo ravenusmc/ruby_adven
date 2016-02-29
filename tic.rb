@@ -1,10 +1,10 @@
-def display_board(boar)
-  puts "   |   |   "
+def display_board(board)
+  puts " #{board[0]}  |   |   "
   puts "___________"
   puts "   |   |   "
   puts "___________"
   puts "   |   |   "
 end 
 
-board = ["  "," "," "," "," "," "," "," "," "]
+board = ["X", " ", " ", " ", " ", " ", " ", " ", " "]
 display_board(board)
