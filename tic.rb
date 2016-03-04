@@ -9,9 +9,6 @@
 # board = ["X "," O "," X ","  ","  ","   ","  ","  ","  "]
 # display_board(board)
 
-numbers = [1,2,3,4]
-numbers.each do |number|
-  puts number * 2
-end 
+
 
 
