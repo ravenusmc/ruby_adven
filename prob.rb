@@ -20,3 +20,7 @@ end
 
 puts max 
 puts min 
+
+#Way to reverse a  string and test iff it is a palidrome 
+puts "Please give me a word to see if it is a palidrome"
+word = gets.chomp
