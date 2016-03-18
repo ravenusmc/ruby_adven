@@ -1,18 +1,9 @@
-class Car 
+puts "Please give me a number"
+num = gets.chomp.to_s
+array = []
+array.push(num)
 
-  def horn
-    puts "beep beep"
-  end 
-
-  def increase
-    puts "speed is increased"
-  end 
-
-end 
-
-car = Car.new
-
-car.horn 
+while num != -99
 
 
 
