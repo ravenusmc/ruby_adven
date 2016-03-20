@@ -55,30 +55,13 @@ def battle(weapon, tool)
       puts "The Human wins"
     elsif tool == weapon 
       puts "Tie Game!"
+      human
   # end   
   end 
 end 
 
 main 
 
- 
-
-      
-
-# def rock
-#   if rand(3) == 1 
-#     tool = "rock"
-#   elsif rand(3) == 2
-#     tool = "Sciccors"
-#   elsif rand(3) == 3
-#     tool = "paper"
-#   elsif rand(3) == 0
-#     tool = "nothing"
-#   end  
-#   puts tool 
-# end 
-
-# rock()
 
 
 
