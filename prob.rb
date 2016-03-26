@@ -1,19 +1,32 @@
-####### Problems from my Programming Logic and Design Book Chapter six Problem 4 #########
+####### Problems from my Programming Logic and Design Book Chapter six Problem 5 #########
 
-puts "Please enter the first number"
-first = gets.chomp.to_i
-puts "Please enter a second number"
-second = gets.chomp.to_i
+puts "Please enter the falling time, in seconds, of an object"
+time = gets.chomp.to_i
 
-def determine(first, second)
-  if first > second 
-    puts "The first number is larger"
-  else 
-    puts "The second number is larger"
-  end 
+def fallingDistance(time)
+  puts "In #{time} seconds the object fell the following amount of meters:"
+  distance = 0.5 * 9.8 * time ** 2
+  puts "The object fell #{distance} meters"
 end 
 
-determine(first, second)
+fallingDistance(time)
+
+####### Problems from my Programming Logic and Design Book Chapter six Problem 4 #########
+
+# puts "Please enter the first number"
+# first = gets.chomp.to_i
+# puts "Please enter a second number"
+# second = gets.chomp.to_i
+
+# def determine(first, second)
+#   if first > second 
+#     puts "The first number is larger"
+#   else 
+#     puts "The second number is larger"
+#   end 
+# end 
+
+# determine(first, second)
 
 ####### Problems from my Programming Logic and Design Book Chapter six Problem 3 #########
 
