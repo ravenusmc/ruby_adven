@@ -1,6 +1,18 @@
 ############ Max Min problem-get a series of numbers and then tell the user the max and min numbers 
 #entered into the program. #######################
 
+####### Problems from my Programming Logic and Design Book Chapter six Problem 2 #########
+
+def feetToInches(feet)
+  puts "Please enter the number of feet to convert to inches"
+  feet = gets.chomp.to_i
+  inches = 
+end 
+
+
+
+########### Problem that gives the user lowest and highest in a sequence of numbers ######
+
 # puts "Please enter a number"
 # num = gets.chomp.to_i
 # max = num 
