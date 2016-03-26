@@ -1,21 +1,34 @@
+####### Problems from my Programming Logic and Design Book Chapter six Problem 4 #########
+
+puts "Please enter the first number"
+first = gets.chomp.to_i
+puts "Please enter a second number"
+second = gets.chomp.to_i
+
+if first > second 
+  puts "The first number is larger"
+else 
+  puts "The second number is larger"
+end 
+
 ####### Problems from my Programming Logic and Design Book Chapter six Problem 3 #########
 
-num1 = rand(10)
-num2 = rand(10)
+# num1 = rand(10)
+# num2 = rand(10)
 
-answer = num1 + num2 
+# answer = num1 + num2 
 
-puts "This program will display two random numbers and ask you to add them together"
-puts "Here are the numbers:"
-puts num1
-puts num2 
-puts "Will you please enter your answer:"
-ans = gets.chomp.to_i
-if ans == answer 
-  puts "Yay! You got it right!"
-else 
-  puts "You got it wrong!"
-end 
+# puts "This program will display two random numbers and ask you to add them together"
+# puts "Here are the numbers:"
+# puts num1
+# puts num2 
+# puts "Will you please enter your answer:"
+# ans = gets.chomp.to_i
+# if ans == answer 
+#   puts "Yay! You got it right!"
+# else 
+#   puts "You got it wrong!"
+# end 
 
 ####### Problems from my Programming Logic and Design Book Chapter six Problem 2 #########
 
