@@ -3,11 +3,14 @@
 
 ####### Problems from my Programming Logic and Design Book Chapter six Problem 2 #########
 
-def feetToInches(feet)
+def feetToInches()
   puts "Please enter the number of feet to convert to inches"
   feet = gets.chomp.to_i
-  inches = 
+  inches = feet * 12
+  puts "#{feet} feet is equal to #{inches} inches!"
 end 
+
+feetToInches()
 
 
 
