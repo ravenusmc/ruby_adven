@@ -5,11 +5,15 @@ first = gets.chomp.to_i
 puts "Please enter a second number"
 second = gets.chomp.to_i
 
-if first > second 
-  puts "The first number is larger"
-else 
-  puts "The second number is larger"
+def determine(first, second)
+  if first > second 
+    puts "The first number is larger"
+  else 
+    puts "The second number is larger"
+  end 
 end 
+
+determine(first, second)
 
 ####### Problems from my Programming Logic and Design Book Chapter six Problem 3 #########
 
