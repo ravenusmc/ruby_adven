@@ -1,20 +1,35 @@
-############ Max Min problem-get a series of numbers and then tell the user the max and min numbers 
-#entered into the program. #######################
+####### Problems from my Programming Logic and Design Book Chapter six Problem 3 #########
+
+num1 = rand(10)
+num2 = rand(10)
+
+answer = num1 + num2 
+
+puts "This program will display two random numbers and ask you to add them together"
+puts "Here are the numbers:"
+puts num1
+puts num2 
+puts "Will you please enter your answer:"
+ans = gets.chomp.to_i
+if ans == answer 
+  puts "Yay! You got it right!"
+else 
+  puts "You got it wrong!"
+end 
 
 ####### Problems from my Programming Logic and Design Book Chapter six Problem 2 #########
 
-def feetToInches()
-  puts "Please enter the number of feet to convert to inches"
-  feet = gets.chomp.to_i
-  inches = feet * 12
-  puts "#{feet} feet is equal to #{inches} inches!"
-end 
+# def feetToInches()
+#   puts "Please enter the number of feet to convert to inches"
+#   feet = gets.chomp.to_i
+#   inches = feet * 12
+#   puts "#{feet} feet is equal to #{inches} inches!"
+# end 
 
-feetToInches()
+# feetToInches()
 
-
-
-########### Problem that gives the user lowest and highest in a sequence of numbers ######
+############ Max Min problem-get a series of numbers and then tell the user the max and min numbers 
+#entered into the program. #######################
 
 # puts "Please enter a number"
 # num = gets.chomp.to_i
