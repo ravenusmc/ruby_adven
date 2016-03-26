@@ -1,15 +1,15 @@
 ####### Problems from my Programming Logic and Design Book Chapter six Problem 5 #########
 
-puts "Please enter the falling time, in seconds, of an object"
-time = gets.chomp.to_i
+# puts "Please enter the falling time, in seconds, of an object"
+# time = gets.chomp.to_i
 
-def fallingDistance(time)
-  puts "In #{time} seconds the object fell the following amount of meters:"
-  distance = 0.5 * 9.8 * time ** 2
-  puts "The object fell #{distance} meters"
-end 
+# def fallingDistance(time)
+#   puts "In #{time} seconds the object fell the following amount of meters:"
+#   distance = 0.5 * 9.8 * time ** 2
+#   puts "The object fell #{distance} meters"
+# end 
 
-fallingDistance(time)
+# fallingDistance(time)
 
 ####### Problems from my Programming Logic and Design Book Chapter six Problem 4 #########
 
