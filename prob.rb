@@ -1,3 +1,20 @@
+####### Problems from my Programming Logic and Design Book Chapter Five Problem 1 #########
+
+total = 0
+i = 1
+
+puts "How many bugs did you catch today?"
+num = gets.chomp.to_i
+
+while i <= 7
+  puts "How many bugs did you catch today?"
+  num = gets.chomp.to_i
+  total = total + num 
+  i++
+end 
+
+
+
 ####### Problems from my Programming Logic and Design Book Chapter six Problem 5 #########
 
 # puts "Please enter the falling time, in seconds, of an object"
