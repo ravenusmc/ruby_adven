@@ -1,19 +1,28 @@
-####### Problems from my Programming Logic and Design Book Chapter Five Problem 1 #########
+puts "Please enter a number"
+num1 = gets.chomp.to_i
+puts "please enter another number"
+num2 = gets.chomp.to_i
 
-total = 0
-i = 1
-
-puts "How many bugs did you catch today?"
-num = gets.chomp.to_i
-
-while i <= 7
-  puts "How many bugs did you catch today?"
-  num = gets.chomp.to_i
-  total = total + num 
-  i++
+if num1 == 2 && num2 == 2
+  puts "yay!"
 end 
 
+####### Problems from my Programming Logic and Design Book Chapter Five Problem 1 #########
 
+# total = 0
+# i = 0
+
+# puts "How many bugs did you catch today?"
+# num = gets.chomp.to_i
+
+# while i < 7
+#   puts "How many bugs did you catch today?"
+#   num = gets.chomp.to_i
+#   total = total + num 
+#   i += 1
+# end 
+
+# puts "You caught #{total} bugs"
 
 ####### Problems from my Programming Logic and Design Book Chapter six Problem 5 #########
 
