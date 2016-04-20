@@ -1,3 +1,7 @@
+#This sets up the array that will be placed into the display_board method
+board = ["  ","   ","  ","  ","  ","  ","  ","   ","  "]
+
+#This method will actually be what displays all of the values once a user makes a selection.
 def display_board(board)
   puts " #{board[0]}|#{board[1]}|#{board[2]}"
   puts "___________"
@@ -6,19 +10,25 @@ def display_board(board)
   puts " #{board[6]}|#{board[7]}|#{board[8]}"
 end 
 
+#This method is just to show the number layout of the game board. Mainly for players who are not
+#familar with tic tac toe. 
+def game_board
   puts " 1 | 2 | 3 "
   puts "___________"
   puts " 4 | 5 | 6 "
   puts "___________"
   puts " 7 | 8 | 9 "
+end 
 
-board = ["  ","   ","  ","  ","  ","  ","  ","   ","  "]
+
 
 # ai = rand(1..9)
 # board[ai] = " O "
 
 puts "Do you want to play tic tac toe?(y/n)"
 play = gets.chomp.to_s
+
+game_board
 
 #This boolean flag will start false but when the game is won, it will turn true thus ending the loop.
 game = false 
