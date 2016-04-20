@@ -43,10 +43,8 @@ while play != "n"
     board[8] = " X " 
   end
   display_board(board)
-  puts "Do you want to play tic tac toe?(y/n)"
-  play = gets.chomp.to_s
 
-  puts " Player Two, based on the board above, where do you want to put an X?"
+  puts " Player Two, based on the board above, where do you want to put an O?"
   choice = gets.chomp.to_i
   if choice == 1 
     board[0] = "O "
@@ -67,10 +65,14 @@ while play != "n"
   elsif choice == 9
     board[8] = " O " 
   end
+  display_board(board)
 
   if board[0] == "X " && board[1] == " X " 
     puts "You won!"
   end 
+
+  puts "Do you want to play tic tac toe?(y/n)"
+  play = gets.chomp.to_s
 
 end 
 
