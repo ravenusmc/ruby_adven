@@ -14,14 +14,14 @@ end
 
 board = ["  ","   ","  ","  ","  ","  ","  ","   ","  "]
 
-ai = rand(1..9)
-board[ai] = " O "
+# ai = rand(1..9)
+# board[ai] = " O "
 
 puts "Do you want to play tic tac toe?(y/n)"
 play = gets.chomp.to_s
 
 while play != "n"
-  puts "Based on the board above, where do you want to put an X?"
+  puts " Player one, based on the board above, where do you want to put an X?"
   choice = gets.chomp.to_i
   if choice == 1 
     board[0] = "X "
@@ -45,6 +45,28 @@ while play != "n"
   display_board(board)
   puts "Do you want to play tic tac toe?(y/n)"
   play = gets.chomp.to_s
+
+  puts " Player Two, based on the board above, where do you want to put an X?"
+  choice = gets.chomp.to_i
+  if choice == 1 
+    board[0] = "O "
+  elsif choice == 2
+    board[1] = " O "
+  elsif choice == 3
+    board[2] = " O " 
+  elsif choice == 4 
+    board[3] = " O "
+  elsif choice == 5
+    board[4] = " O "
+  elsif choice == 6
+    board[5] = " O "
+  elsif choice == 7
+    board[6] = " O "
+  elsif choice == 8 
+    board[7] = " O "
+  elsif choice == 9
+    board[8] = " O " 
+  end
 
   if board[0] == "X " && board[1] == " X " 
     puts "You won!"

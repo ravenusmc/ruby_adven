@@ -1,11 +1,11 @@
-puts "Please enter a number"
-num1 = gets.chomp.to_i
-puts "please enter another number"
-num2 = gets.chomp.to_i
+# puts "Please enter a number"
+# num1 = gets.chomp.to_i
+# puts "please enter another number"
+# num2 = gets.chomp.to_i
 
-if num1 == 2 && num2 == 2
-  puts "yay!"
-end 
+# if num1 == 2 && num2 == 2
+#   puts "yay!"
+# end 
 
 ####### Problems from my Programming Logic and Design Book Chapter Five Problem 1 #########
 

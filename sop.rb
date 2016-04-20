@@ -15,35 +15,40 @@
 #How to find a specific value in an array 
 # array = [200,3,500,150,7,8,134,234,56,77]
 
-# num = 8
-
 # found = false 
 
 # index = 0
 
 # puts "What value do you want to look for?"
-# index = gets.chomp.to_i
+# num = gets.chomp.to_i
 
-# while found == false && index <= array.length - 1 
+# while found == false 
 #   if array[index] == num 
 #     found == true 
 #   else 
 #     index = index + 1
-#     puts "Your value of #{num} was found at position #{array[index]}"
+#     puts "Your value of #{num} was found at position #{index}"
 #   end 
 # end 
 
 #totaling the values in an array
+# def aver(array)
+#   total = 0 
+#   array.each do |f|
+#     total = total + f
+#   end 
+#   return total
+# end 
 
-def aver(array)
-  total = 0 
-  array.each do |f|
-    total = total + f
-  end 
-  return total
+# puts aver([1,2,3])
+
+array = [1,2,3]
+
+if array[1] == 2 && array[2] == 4 
+  puts "yay!"
+else 
+  puts "Nay"
 end 
-
-puts aver([1,2,3,4,2])
 
 
 
