@@ -20,8 +20,6 @@ def game_board
   puts " 7 | 8 | 9 "
 end 
 
-
-
 # ai = rand(1..9)
 # board[ai] = " O "
 
@@ -34,6 +32,12 @@ game_board
 game = false 
 
 while game == false
+  puts `clear`
+  puts "Game Board"
+  print game_board
+  puts "------------------"
+  puts "player moves:"
+  display_board(board)
   puts "Player one, based on the board above, where do you want to put an X?"
   choice = gets.chomp.to_i
   if choice == 1 
