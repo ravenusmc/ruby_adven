@@ -70,6 +70,21 @@ while game == false
   elsif board[6] == " X " && board[7] == " X " && board[8] == " X "
     puts "Player One WINS!!!"
     game = true
+  elsif board[0] == "X " && board[3] == " X " && board[6] == " X "
+    puts "Player One WINS!!!"
+    game = true
+  elsif board[1] == " X " && board[4] == " X " && board[7] == " X "
+    puts "Player One WINS!!!"
+    game = true 
+  elsif board[2] == " X " && board[5] == " X " && board[8] == " X "
+    puts "Player One Wins!!!"
+    game = true 
+  elsif board[0] == "X " && board[4] == " X " && board[8] == " X "
+    puts "Player One Wins!!!"
+    game = true 
+  elsif board[2] == " X " && board[4] == " X " && board[6] == " X "
+    puts "Player One wins!!!"
+    game = true 
   end 
 
   puts "Player Two, based on the board above, where do you want to put an O?"
@@ -104,6 +119,21 @@ while game == false
   elsif board[6] == " O " && board[7] == " O " && board[8] == " O "
     puts "Player Two WINS!!!"
     game = true
+  elsif board[0] == "O " && board[3] == " O " && board[6] == " O "
+    puts "Player Two WINS!!!"
+    game = true
+  elsif board[1] == " O " && board[4] == " O " && board[7] == " O "
+    puts "Player Two WINS!!!"
+    game = true 
+  elsif board[2] == " O " && board[5] == " O " && board[8] == " O "
+    puts "Player Two Wins!!!"
+    game = true 
+  elsif board[0] == "O " && board[4] == " O " && board[8] == " O "
+    puts "Player Two Wins!!!"
+    game = true 
+  elsif board[2] == " O " && board[4] == " O " && board[6] == " O "
+    puts "Player Two wins!!!"
+    game = true 
   end 
 
 end 
