@@ -1,5 +1,148 @@
-#This sets up the array that will be placed into the display_board method
-board = ["  ","   ","  ","  ","  ","  ","  ","   ","  "]
+def main 
+  puts "----E*TIC*TAC*TOE----"
+  puts "----------------------"
+
+  start
+end 
+
+def start 
+  game_board
+  puts "Do you want to play tic tac toe?(y/n)"
+  play = gets.chomp.to_s
+  if play == "y"
+    #This sets up the array that will be placed into the display_board method
+    board = ["  ","   ","  ","  ","  ","  ","  ","   ","  "]
+    display_board(board)
+    game(board)
+  else 
+    puts "Okay, hope you play soon!"
+  end 
+end 
+
+def game(board)
+
+  #This boolean flag will start false but when the game is won, it will turn true thus ending the loop.
+  game = false 
+
+  while game == false
+    puts `clear`
+    puts "Game Board"
+    print game_board
+    puts "------------------"
+    puts "player moves:"
+    display_board(board)
+    puts "Player one, based on the board above, where do you want to put an X?"
+    choice = gets.chomp.to_i
+
+    if choice == 1 
+      board[0] = "X "
+    elsif choice == 2
+      board[1] = " X "
+    elsif choice == 3
+      board[2] = " X " 
+    elsif choice == 4 
+      board[3] = " X "
+    elsif choice == 5
+      board[4] = " X "
+    elsif choice == 6
+      board[5] = " X "
+    elsif choice == 7
+      board[6] = " X "
+    elsif choice == 8 
+      board[7] = " X "
+    elsif choice == 9
+      board[8] = " X " 
+    end
+    display_board(board)
+
+    if board[0] == "X " && board[1] == " X " && board[2] == " X "
+      puts "Player One WINS!!!"
+      game = true 
+    elsif board[3] == " X " && board[4] == " X " && board[5] == " X "
+      puts "Player One WINS!!!"
+      game = true 
+    elsif board[6] == " X " && board[7] == " X " && board[8] == " X "
+      puts "Player One WINS!!!"
+      game = true
+    elsif board[0] == "X " && board[3] == " X " && board[6] == " X "
+      puts "Player One WINS!!!"
+      game = true
+    elsif board[1] == " X " && board[4] == " X " && board[7] == " X "
+      puts "Player One WINS!!!"
+      game = true 
+    elsif board[2] == " X " && board[5] == " X " && board[8] == " X "
+      puts "Player One Wins!!!"
+      game = true 
+    elsif board[0] == "X " && board[4] == " X " && board[8] == " X "
+      puts "Player One Wins!!!"
+      game = true 
+    elsif board[2] == " X " && board[4] == " X " && board[6] == " X "
+      puts "Player One wins!!!"
+      game = true 
+    end 
+
+    puts "Player Two, based on the board above, where do you want to put an O?"
+    choice = gets.chomp.to_i
+
+    if choice == 1 
+      board[0] = "O "
+    elsif choice == 2
+      board[1] = " O "
+    elsif choice == 3
+      board[2] = " O " 
+    elsif choice == 4 
+      board[3] = " O "
+    elsif choice == 5
+      board[4] = " O "
+    elsif choice == 6
+      board[5] = " O "
+    elsif choice == 7
+      board[6] = " O "
+    elsif choice == 8 
+      board[7] = " O "
+    elsif choice == 9
+      board[8] = " O " 
+    end
+    display_board(board)
+
+    if board[0] == "O " && board[1] == " O " && board[2] == " O "
+      puts "Player Two WINS!!!"
+      game = true 
+    elsif board[3] == " O " && board[4] == " O " && board[5] == " O "
+      puts "Player Two WINS!!!"
+      game = true 
+    elsif board[6] == " O " && board[7] == " O " && board[8] == " O "
+      puts "Player Two WINS!!!"
+      game = true
+    elsif board[0] == "O " && board[3] == " O " && board[6] == " O "
+      puts "Player Two WINS!!!"
+      game = true
+    elsif board[1] == " O " && board[4] == " O " && board[7] == " O "
+      puts "Player Two WINS!!!"
+      game = true 
+    elsif board[2] == " O " && board[5] == " O " && board[8] == " O "
+      puts "Player Two Wins!!!"
+      game = true 
+    elsif board[0] == "O " && board[4] == " O " && board[8] == " O "
+      puts "Player Two Wins!!!"
+      game = true 
+    elsif board[2] == " O " && board[4] == " O " && board[6] == " O "
+      puts "Player Two wins!!!"
+      game = true 
+    end
+
+    #This long conditional statement will check to see if a tie game has develeped.
+    if (board[0] == "X " || board[0] == "O " ) && (board[1] == " X " || board[1] == " O ") && 
+      (board[2] == " X " || board[2] == " O ") && (board[3] == " X " || board[3] == " O ") &&
+      (board[4] == " X " || board[4] == " O ") && (board[5] == " X " || board[5] == " O ") &&
+      (board[6] == " X " || board[6] == " O ") && (board[7] == " X " || board[7] == " O ") &&
+      (board[8] == " X " || board[8] == " O ")
+        puts "Tie Game!!!"
+        puts "You should play again to see who the winner is!!"
+        game = true 
+    end 
+  end 
+end
 
 #This method will actually be what displays all of the values once a user makes a selection.
 def display_board(board)
@@ -23,129 +166,28 @@ end
 # ai = rand(1..9)
 # board[ai] = " O "
 
-puts "Do you want to play tic tac toe?(y/n)"
-play = gets.chomp.to_s
 
-game_board
 
-#This boolean flag will start false but when the game is won, it will turn true thus ending the loop.
-game = false 
+main
 
-while game == false
-  puts `clear`
-  puts "Game Board"
-  print game_board
-  puts "------------------"
-  puts "player moves:"
-  display_board(board)
-  puts "Player one, based on the board above, where do you want to put an X?"
-  choice = gets.chomp.to_i
-  if choice == 1 
-    board[0] = "X "
-  elsif choice == 2
-    board[1] = " X "
-  elsif choice == 3
-    board[2] = " X " 
-  elsif choice == 4 
-    board[3] = " X "
-  elsif choice == 5
-    board[4] = " X "
-  elsif choice == 6
-    board[5] = " X "
-  elsif choice == 7
-    board[6] = " X "
-  elsif choice == 8 
-    board[7] = " X "
-  elsif choice == 9
-    board[8] = " X " 
-  end
-  display_board(board)
 
-  if board[0] == "X " && board[1] == " X " && board[2] == " X "
-    puts "Player One WINS!!!"
-    game = true 
-  elsif board[3] == " X " && board[4] == " X " && board[5] == " X "
-    puts "Player One WINS!!!"
-    game = true 
-  elsif board[6] == " X " && board[7] == " X " && board[8] == " X "
-    puts "Player One WINS!!!"
-    game = true
-  elsif board[0] == "X " && board[3] == " X " && board[6] == " X "
-    puts "Player One WINS!!!"
-    game = true
-  elsif board[1] == " X " && board[4] == " X " && board[7] == " X "
-    puts "Player One WINS!!!"
-    game = true 
-  elsif board[2] == " X " && board[5] == " X " && board[8] == " X "
-    puts "Player One Wins!!!"
-    game = true 
-  elsif board[0] == "X " && board[4] == " X " && board[8] == " X "
-    puts "Player One Wins!!!"
-    game = true 
-  elsif board[2] == " X " && board[4] == " X " && board[6] == " X "
-    puts "Player One wins!!!"
-    game = true 
-  end 
 
-  puts "Player Two, based on the board above, where do you want to put an O?"
-  choice = gets.chomp.to_i
-  if choice == 1 
-    board[0] = "O "
-  elsif choice == 2
-    board[1] = " O "
-  elsif choice == 3
-    board[2] = " O " 
-  elsif choice == 4 
-    board[3] = " O "
-  elsif choice == 5
-    board[4] = " O "
-  elsif choice == 6
-    board[5] = " O "
-  elsif choice == 7
-    board[6] = " O "
-  elsif choice == 8 
-    board[7] = " O "
-  elsif choice == 9
-    board[8] = " O " 
-  end
-  display_board(board)
+  # if board[0] == "X " || board[0] == "O "
+  #   return true  
+  # else 
+  #   return false
+  # end 
 
-  if board[0] == "O " && board[1] == " O " && board[2] == " O "
-    puts "Player Two WINS!!!"
-    game = true 
-  elsif board[3] == " O " && board[4] == " O " && board[5] == " O "
-    puts "Player Two WINS!!!"
-    game = true 
-  elsif board[6] == " O " && board[7] == " O " && board[8] == " O "
-    puts "Player Two WINS!!!"
-    game = true
-  elsif board[0] == "O " && board[3] == " O " && board[6] == " O "
-    puts "Player Two WINS!!!"
-    game = true
-  elsif board[1] == " O " && board[4] == " O " && board[7] == " O "
-    puts "Player Two WINS!!!"
-    game = true 
-  elsif board[2] == " O " && board[5] == " O " && board[8] == " O "
-    puts "Player Two Wins!!!"
-    game = true 
-  elsif board[0] == "O " && board[4] == " O " && board[8] == " O "
-    puts "Player Two Wins!!!"
-    game = true 
-  elsif board[2] == " O " && board[4] == " O " && board[6] == " O "
-    puts "Player Two wins!!!"
-    game = true 
-  end
-  
-  if (board[0] == "X " || board[0] == "O " ) && (board[1] == " X " || board[1] == " O ") && 
-    (board[2] == " X " || board[2] == " O ") && (board[3] == " X " || board[3] == " O ") &&
-    (board[4] == " X " || board[4] == " O ") && (board[5] == " X " || board[5] == " O ") &&
-    (board[6] == " X " || board[6] == " O ") && (board[7] == " X " || board[7] == " O ") &&
-    (board[8] == " X " || board[8] == " O ")
-      puts "Tie Game!!!"
-      puts "You should play again to see who the winner is!!"
-      game = true 
-  end 
-end 
+
+  # if board[0] == "X " || board[0] == "O "
+  #   puts "That position has alread been taken"
+  #   puts "Player one, based on the board above, where do you want to put an X?"
+  #   choice = gets.chomp.to_i
+  # end 
+
+
+
+
 
 
 
