@@ -35,6 +35,7 @@ def game(board)
     puts "player moves:"
     display_board(board)
 
+    #Player One Movements start here
     puts "Player one, based on the board above, where do you want to put an X?"
     choice = gets.chomp.to_i
     
@@ -44,6 +45,7 @@ def game(board)
 
     player_one_win(board)
 
+    #Player two movements start here
     puts "Player Two, based on the board above, where do you want to put an O?"
     choice = gets.chomp.to_i
 
@@ -54,13 +56,13 @@ def game(board)
 
     #This long conditional statement will check to see if a tie game has develeped.
     if (board[0] == "X " || board[0] == "O " ) && (board[1] == " X " || board[1] == " O ") && 
-      (board[2] == " X " || board[2] == " O ") && (board[3] == " X " || board[3] == " O ") &&
-      (board[4] == " X " || board[4] == " O ") && (board[5] == " X " || board[5] == " O ") &&
-      (board[6] == " X " || board[6] == " O ") && (board[7] == " X " || board[7] == " O ") &&
-      (board[8] == " X " || board[8] == " O ")
-        puts "Tie Game!!!"
-        puts "You should play again to see who the winner is!!"
-        game = true 
+    (board[2] == " X " || board[2] == " O ") && (board[3] == " X " || board[3] == " O ") &&
+    (board[4] == " X " || board[4] == " O ") && (board[5] == " X " || board[5] == " O ") &&
+    (board[6] == " X " || board[6] == " O ") && (board[7] == " X " || board[7] == " O ") &&
+    (board[8] == " X " || board[8] == " O ")
+      puts "Tie Game!!!"
+      puts "You should play again to see who the winner is!!"
+      game = true 
     end 
   end 
 end
@@ -191,6 +193,7 @@ def player_two_win(board)
     game = true 
   end
 end
+
 
 main
 
