@@ -128,6 +128,7 @@ def player_one_win(board)
   if board[0] == "X " && board[1] == " X " && board[2] == " X "
     puts "Player One WINS!!!"
     game = true 
+    end_game(game)
   elsif board[3] == " X " && board[4] == " X " && board[5] == " X "
     puts "Player One WINS!!!"
     game = true 
@@ -213,6 +214,10 @@ def check(board)
     return false 
   end 
 end
+
+def end_game(game)
+  puts "Player One wins!"
+end 
 
 
 main
