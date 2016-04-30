@@ -5,6 +5,10 @@ def main
 
   puts "Do you want to play tic tac toe?(y/n)"
   play = gets.chomp.to_s
+  while play.downcase != 'y' && play.downcase != 'n'
+    puts "Please enter either 'y' or 'n'"
+    play = gets.chomp.to_s
+  end 
   if play == "y"
     start
   else 
@@ -17,7 +21,7 @@ end
 def start 
   game_board
   #This sets up the array that will be placed into the display_board method
-  board = ["  ","   ","  ","  ","  ","  ","  ","   ","  "]
+  board = ["* "," * "," * "," * "," * "," * ","* "," * "," * "]
   display_board(board)
   game(board)
 end 
@@ -45,11 +49,19 @@ def game(board)
 
     player_one_win(board)
 
+
     #Player two movements start here
     puts "Player Two, based on the board above, where do you want to put an O?"
     choice = gets.chomp.to_i
-
     player_two(board, choice)
+
+    # while (board[1] == " * ") || (board[2] == " * ")
+    #   puts "Spot taken!"
+    #   puts "Player Two, based on the board above, where do you want to put an O?"
+    #   choice = gets.chomp.to_i
+    #   player_two(board, choice)
+    # end 
+
     display_board(board)
 
     player_two_win(board)
@@ -194,24 +206,27 @@ def player_two_win(board)
   end
 end
 
+def check(board)
+  if (board[1] == " * ") || (board[2] == " * ")
+    return true 
+  else 
+    return false 
+  end 
+end
+
 
 main
 
 # ai = rand(1..9)
 # board[ai] = " O "
 
-  # if board[0] == "X " || board[0] == "O "
-  #   return true  
-  # else 
-  #   return false
-  # end 
 
+# || (board[1] == " X " || board[1] == " O ") || 
+#       (board[2] == " X " || board[2] == " O ") || (board[3] == " X " || board[3] == " O ") ||
+#       (board[4] == " X " || board[4] == " O ") || (board[5] == " X " || board[5] == " O ") ||
+#       (board[6] == " X " || board[6] == " O ") || (board[7] == " X " || board[7] == " O ") ||
+#       (board[8] == " X " || board[8] == " O ")
 
-  # if board[0] == "X " || board[0] == "O "
-  #   puts "That position has alread been taken"
-  #   puts "Player one, based on the board above, where do you want to put an X?"
-  #   choice = gets.chomp.to_i
-  # end 
 
 
 
